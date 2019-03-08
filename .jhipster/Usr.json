@@ -1,0 +1,36 @@
+{
+    "name": "Usr",
+    "fields": [
+        {
+            "fieldName": "userID",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "password",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "usr",
+            "otherEntityName": "product",
+            "otherEntityRelationshipName": "usr"
+        }
+    ],
+    "changelogDate": "20190308121750",
+    "entityTableName": "usr",
+    "dto": "no",
+    "pagination": "infinite-scroll",
+    "service": "no",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}
